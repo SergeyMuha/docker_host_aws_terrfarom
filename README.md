@@ -31,16 +31,19 @@ Outputs:
 
 Docker-host = ec2-34-200-236-193.compute-1.amazonaws.com
 
-ssh to Docker-host
+###### ssh to Docker-host 
 
-RUN
+###### ssh -i ~/.ssh/terraformwp.pem ubuntu@ec2-34-200-236-193.compute-1.amazonaws.com
 
-git clone https://github.com/SergeyMuha/docker_haproxy_apache_mysql_wp.git
+###### git clone https://github.com/SergeyMuha/docker_haproxy_apache_mysql_wp.git
 
-cd docker_haproxy_apache_mysql_wp
+###### cd docker_haproxy_apache_mysql_wp
 
-RUN docker-compose
+###### docker-compose build
 
+###### ██docker-compose up --scale apache2=2
+
+Open Docker-host:8080
 
 To destroy infrastructure use 
 

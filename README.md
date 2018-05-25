@@ -31,6 +31,16 @@ Outputs:
 
 Docker-host = ec2-34-200-236-193.compute-1.amazonaws.com
 
+ssh to Docker-host
+
+RUN
+
+git clone https://github.com/SergeyMuha/docker_haproxy_apache_mysql_wp.git
+
+cd docker_haproxy_apache_mysql_wp
+
+RUN docker-compose
+
 
 To destroy infrastructure use 
 

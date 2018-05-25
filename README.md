@@ -41,7 +41,7 @@ Docker-host = ec2-34-200-236-193.compute-1.amazonaws.com
 
 ###### docker-compose build
 
-###### ██docker-compose up --scale apache2=2
+###### docker-compose up --scale apache2=2
 
 Open Docker-host:8080
 
